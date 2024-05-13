@@ -19,12 +19,14 @@ int main() {
         std::cout << x - y << std::endl;
     } else if (operation == '*') {
         std::cout << x * y << std::endl;
-    } else {
+    } else if (operation == '/'){
         if (y != 0) {
             std::cout << x / y << std::endl;
         } else {
              std::cout << "You can't divide by zero" << std::endl;
         }
+    } else {
+        std::cout << "Wrong operation" << std::endl;
     }
 
     return 0;
